@@ -57,8 +57,8 @@ export function runIsolationTest(includeTenant: boolean): IsolationRun {
 
   return {
     pass,
-    expected: "200 \u00b7 northwind:cable-hdmi",
-    actual: `${checkout.status} \u00b7 ${checkout.cacheKey}`,
+    expected: "200 · northwind:cable-hdmi",
+    actual: `${checkout.status} · ${checkout.cacheKey}`,
     checkout,
   };
 }
