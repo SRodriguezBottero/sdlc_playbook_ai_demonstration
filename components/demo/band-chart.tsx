@@ -33,7 +33,7 @@ export function BandChart({
     <svg
       viewBox={`0 0 ${width} ${height}`}
       role="img"
-      aria-label={`${label}. Último punto ${rate(latest)}.`} 
+      aria-label={`${label}. Último punto ${rate(latest)}.`}
       className="h-40 w-full lg:h-44"
       preserveAspectRatio="xMidYMid meet"
     >
