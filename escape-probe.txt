@@ -1,0 +1,3 @@
+cacheKey(tenant, sku) devuelve \`\${tenant}:\${sku}\`.
+      aria-label={`${label}. Último punto ${rate(latest)}.`}
+      viewBox={`0 0 ${width} ${height}`}
