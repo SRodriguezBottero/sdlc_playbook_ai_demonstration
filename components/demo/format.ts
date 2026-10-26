@@ -2,9 +2,9 @@ import type { BandAssessment, Tier } from "@/lib/bands";
 
 const TIER_LABEL: Record<Tier, string> = {
   in_band: "En banda",
-  sigma1: "1\u03c3 \u00b7 registrar",
-  sigma2: "2\u03c3 \u00b7 diagnosticar",
-  sigma3: "3\u03c3 \u00b7 proponer",
+  sigma1: "1σ · registrar",
+  sigma2: "2σ · diagnosticar",
+  sigma3: "3σ · proponer",
 };
 
 const ACTION_LABEL = {
@@ -23,7 +23,7 @@ export function actionLabel(action: keyof typeof ACTION_LABEL): string {
 }
 
 export function points(value: number): string {
-  if (!Number.isFinite(value)) return "\u221e";
+  if (!Number.isFinite(value)) return "∞";
   return value.toFixed(2);
 }
 
