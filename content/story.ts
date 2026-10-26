@@ -115,7 +115,7 @@ Toda lectura de precio incluye tenantId en la key.
 Un hit de otro tenant responde 500 y no sirve ese precio.
 
 ## Design
-cacheKey(tenant, sku) devuelve \`${tenant}:${sku}\`.
+cacheKey(tenant, sku) devuelve \`\${tenant}:\${sku}\`.
 El test de cruce acme → northwind ya está en rojo
 y no se edita durante el fix.
 
